@@ -45,9 +45,10 @@ img{
     margin: auto;
     max-width: 100%;
     height: auto;
-}
-img.accueil{
     border : black solid 5px;
+}
+img.logo{
+    border : none;
 }
 footer{
     justify-content: space-between;
