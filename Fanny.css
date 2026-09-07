@@ -7,6 +7,24 @@
     margin :0px;
     
 }
+#burger span {
+    display: block;          
+    width: 50px;            
+    height: 8px;             
+    margin-bottom: 5px;      
+    background-color: black; 
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out; 
+}
+
+#burger span:last-child {
+    margin-bottom: 0;
+}
+nav.open {
+    display: flex; 
+    flex-direction: column;
+    transform: translateX(0.3%);
+}
 button{
     background-color: #E36BB9;
     border: 3px solid black;
@@ -21,6 +39,14 @@ button{
     border-radius: 25px;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
 }
+#burger{
+        display: none;
+    background: transparent; 
+    border: none;           
+    cursor: pointer;        
+    padding: 0;             
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -39,7 +65,8 @@ h1{
     margin: 50px;
     font-family: "Young Serif", serif;
     font-weight: 400;
-    font-style: normal;    
+    font-style: normal; 
+    text-align: center;   
 }
 img{
     margin: auto;
@@ -49,6 +76,15 @@ img{
 }
 img.logo{
     border : none;
+    
+}
+#calendrier {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 24px;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgb(0, 0, 0);
+        font-family:"Instrument Sans";
 }
 footer{
     justify-content: space-between;
@@ -116,9 +152,39 @@ container.spectacle{
 @media screen and (min-width: 320px) and (max-width: 767.9px) {
     #navbar{
         flex-direction: column;
+        align-self: start;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30%;          /* Prend 30% de la largeur de l'écran (ajustable) */
+        height: 100vh;        /* Prend toute la hauteur */
+        background-color: #ffffff; /* Couleur de fond du panneau */
+        border: 2px black solid;
+        border-radius: 20px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        /* Cache le menu hors de l'écran à droite */
+        transform: translateX(-100%); 
+        
+        /* Animation fluide de 0.3 seconde */
+        transition: transform 0.3s ease-in-out; 
+        
+        z-index: 1000; /* Superpose le menu par-dessus tout le contenu */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Ombre portée stylée */
     }
     button{
-            display: none;
+        font-size:0.8rem;
+        padding: 5px;
+    }
+    #burger{
+        display: block;
+        z-index :1001;
     }
     h1{
         font-size: 20px;
@@ -145,18 +211,52 @@ container.spectacle{
         font-size: 1.5rem ;
         margin:0px;
     }
+    img{
+        margin: 0;
+    }
 }
 
 /* Media Queries pour tablette */
 @media screen and (min-width: 768px) and (max-width: 1023.9px) {
     #navbar{
         flex-direction: column;
+        align-self: start;
     }
-    button{
-        display: none;
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30%;          /* Prend 30% de la largeur de l'écran (ajustable) */
+        height: 100vh;        /* Prend toute la hauteur */
+        background-color: #ffffff; /* Couleur de fond du panneau */
+        border: 2px black solid;
+        border-radius: 20px;
+        
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        /* Cache le menu hors de l'écran à droite */
+        transform: translateX(-100%); 
+        
+        /* Animation fluide de 0.3 seconde */
+        transition: transform 0.3s ease-in-out; 
+        
+        z-index: 1000; /* Superpose le menu par-dessus tout le contenu */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Ombre portée stylée */
+    }
+    #burger {
+        display: block;
+        z-index :1001;
+    }
+    img.logo{
+        width: 100%;
+
     }
     h1{
-        font-size: 25px;
+        font-size: 35px;
         margin: 30px;
     }
     #mentions{
@@ -175,23 +275,50 @@ container.spectacle{
         align-items: center;
         padding-top: 10px;
     }
-
 }
+
 
 /* Media Queries pour taille  petit desktop */ 
 @media screen and (min-width: 1024px) and (max-width: 1439.9px) {
-    button{
+    nav {
+        display: flex !important;
+        flex-direction: row !important; /* Force l'alignement horizontal */
+        position: static; /* Annule le positionnement fixe du mobile */
+        transform: none !important; /* Annule le décalage */
         margin: 30px;
-        padding: 0px 30px;
         font-size: 1rem;
     }
-    h1{
-        font-size: 25px;
+    button {
+        margin: 3px;
+    }
+    #burger {
+        display: none;
+    }
+    h1 {
+        font-size: 45px;
         margin: 30px;
     }
 }
 
-
-
-
-
+/* Media Queries pour taille  desktop */ 
+@media screen and (min-width: 1440px){
+        nav {
+        display: flex !important;
+        flex-direction: row !important; /* Force l'alignement horizontal */
+        position: static; /* Annule le positionnement fixe du mobile */
+        transform: none !important; /* Annule le décalage */
+        margin: 30px;
+        font-size: 1rem;
+    }
+    button {
+        margin: 25px;
+        padding: 15px;
+    }
+    #burger {
+        display: none;
+    }
+    h1 {
+        font-size: 55px;
+        margin: 30px;
+    }
+}

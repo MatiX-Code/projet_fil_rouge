@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Fanny Egéa</title>
+
+    <!-- Fichier JS Perso -->
+    <script src="Fanny.js" defer></script>
+
+    <!-- Fichier principal FullCalendar Local  -->
+    <script src="fullcalendar-7.1.0/dist/fullcalendar.global.js"></script>
+
+    <!-- Fichier de langue Fr -->
+    <script src="fullcalendar-7.1.0/node_modules/fullcalendar/locales/fr/global.js"></script>
+
+    <!-- Feuille de style CSS de Fullcalendar -->
+    <link rel="stylesheet" href="fullcalendar-7.1.0/dist/skeleton.css">
+    <script src="fullcalendar-7.1.0/dist/themes/monarch/global.js"></script>
+    <link rel="stylesheet" href="fullcalendar-7.1.0/dist/themes/monarch/theme.css">
+    <link rel="stylesheet" href="fullcalendar-7.1.0/dist/themes/monarch/palettes/purple.css">
+
+    <!-- Partie Graphique avec CSS et police ecriture -->
+    <link rel="stylesheet" href="Fanny.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Young+Serif&display=swap" rel="stylesheet">
+
+<header id = "navbar">
+    <nav id ="nav-links">
+        <a href="Accueil.html"><button >ACCUEIL</button></a>
+        <a href="Mon_Spectacle.html"><button>MON SPECTACLE</button></a>
+        <a href="portfolio.html"><button>PORTFOLIO</button></a>
+        <a href="planning.html"><button style="background-color: #64DFDF;">PLANNING</button></a>
+        <a href="contact.html"><button>CONTACT</button></a>
+    </nav>
+    
+    <button id = "burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<body>
+    <container class="planning" >
+        <h1>Planning</h1>
+        <div id = "calendrier"></div>
+    </container>   
+</body>
+
+<footer>
+    <div id = "reseaux">
+        <a href="https://www.instagram.com/fannyegea_pro/" target="_blank" style="color: white"aria-label='Instagram'><img class = "reseaux-icon" src="asset/Logo/instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/people/Fanny-Égéa-Chanteuse/100092209247741/" target="_blank" style="color: white"aria-label="Facebook"><img class = "reseaux-icon" src="asset/Logo/facebook.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@fannyegea5804" target="_blank" style="color: white" aria-label="YouTube"><img class = "reseaux-icon" src="asset/Logo/youtube.png" alt="YouTube"></a>
+    </div>
+    <div id="mentions">
+        <a href="mentions_legales.html" style="color: white" aria-label="Mentions légales">Mentions légales</a>
+    </div>
+    <div id = "tel">
+        <img class = "reseaux-icon" src="asset/Logo/whatsapp.png" alt="WhatsApp">
+        <p class = "footer">06 76 70 07 56</p>
+    </div>
+</footer>
+</html>
