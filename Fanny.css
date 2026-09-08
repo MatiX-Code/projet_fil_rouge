@@ -1,5 +1,8 @@
 /*Base CSS */
-
+body{
+    margin: 0;
+    padding: 0;
+}
 #navbar{
     display: flex;
     justify-content: center;
@@ -40,17 +43,17 @@ button{
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
 }
 #burger{
-        display: none;
+    display: none;
     background: transparent; 
     border: none;           
     cursor: pointer;        
     padding: 0;             
 }
 
-body{
+main{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 82vh;
     margin: 0;
     padding: 0;
 }
@@ -138,6 +141,7 @@ p{
     font-weight: weight;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    font-size: 18px ;
 }
 container.spectacle{
     margin-top: 50px;
@@ -146,6 +150,37 @@ container.spectacle{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+p.newletter{
+    margin-top: 55px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 1.5rem ;
+    text-align: center;
+}
+form.newletter{
+    text-align: center;
+    font-size: xx-large;
+}
+input.envoyer{
+    background-color: #E36BB9;
+    border: 3px solid black;
+    margin: 20px;
+    padding:0px 20px;
+    cursor: pointer;
+    /* font-size: 21px; */
+    font-size: 1.313rem;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 25px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+input.newletter{
+    font-size: x-large;
 }
 
 /*Media Queries pour mobile*/
