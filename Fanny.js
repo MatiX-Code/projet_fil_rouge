@@ -23,7 +23,7 @@ burger.addEventListener("click",() =>{
     headerToolbar: {
       left: 'prev,next,today', // Boutons Précédent, Suivant, Aujourd'hui (à gauche)
       center: 'title',         // Titre du mois et de l'année (au centre)
-    //   right: 'dayGridMonth,timeGridWeek,timeGridDay' // Choix des vues : Mois, Semaine, Jour (à droite)
+       //right: 'dayGridMonth,timeGridWeek,timeGridDay' // Choix des vues : Mois, Semaine, Jour (à droite)
     },
 // Nos événements de test (Mock Data)
         events: [
@@ -33,7 +33,7 @@ burger.addEventListener("click",() =>{
             
         },
         {
-            title: "Un Ado peut en cacher un autre",
+            title: "Un Ado peut en cacher un autrecxcxcxcxcxcxcxcxcxcxcxcxcxcxc",
             start : "2026-09-10"
         },
         {
@@ -42,7 +42,18 @@ burger.addEventListener("click",() =>{
         }
         ]
     });
+const cardInfo = document.getElementsByClassName("fc-Rw");//fc-RW = class event
+console.log(cardInfo);
+// cardInfo.addEventListener("click", ()=>{
+//     console.log("coucou")
+// });
 
 // 3. Afficher le calendrier
     planning.render();
+
+    const boutton = document.getElementsByClassName("fc-1q")[0];
+    boutton.addEventListener("click",()=>{
+        console.log(cardInfo);
+    });
 });
+

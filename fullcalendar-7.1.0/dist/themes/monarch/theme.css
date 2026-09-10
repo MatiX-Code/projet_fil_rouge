@@ -15,8 +15,9 @@
   background-color:  #e36bb9;
   border-radius: 0;
   margin: 0;
-  border: 0;
+  border: black, 5px, solid;
   padding: 0
+  
 }
 
 .fc-monarch-JiE {
@@ -714,7 +715,7 @@
 }
 
 .fc-monarch-8cT {
-  padding-block: 10px
+  padding-block: 2px;
 }
 
 .fc-monarch-P9h {
