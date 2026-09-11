@@ -1,0 +1,97 @@
+/*-----------------------Calendar ---------------------------------------*/
+/* =========================================================
+   SÉLECTEURS FORCÉS POUR LES BOUTONS FULLCALENDAR 
+   ========================================================= */
+/* Noms des jours de la semaine */
+.fc-monarch-a3B{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+/*Numéro des jours */
+.fc-monarch-1sP{
+    font-size: 1rem;
+    font-weight: 700;
+}
+/* Cible directement l'élément bouton généré par le moteur */
+.fc button,
+.fc-toolbar button,
+button[class*="fc-"] {
+    background-color: #E36BB9 !important; /* Votre bleu turquoise */
+    background: #E36BB9 !important;
+    border: 3px solid black !important;
+    color: #111111 !important;            /* Écritures en noir */
+    font-family: 'Instrument Sans', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border-radius: 25px !important;
+    opacity: 1 !important;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5) !important;
+    margin: 8px;
+}
+/*Bouton navigation */
+svg{
+    margin: 0 15px;
+}
+/* Style au survol de la souris */
+.fc button:hover,
+.fc-toolbar button:hover,
+button[class*="fc-"]:hover {
+    background-color: #64DFDF !important;
+    background: #64DFDF !important;
+    border-color: black !important;
+}
+
+/* Ajustement pour le titre et les liens */
+.fc .fc-toolbar-title {
+    font-family: 'Young Serif', serif !important;
+    color: #111111 !important;
+    text-transform: capitalize !important;
+}
+
+.fc a {
+    text-decoration: none !important;
+    color: #111111 !important;
+}
+/*Mois */
+.fc-monarch-AVD{
+        text-transform: capitalize !important;
+        font-size:xx-large;
+        text-decoration: underline;
+}
+/*Event */
+.fc-M0{
+    background-color: #ffffff;
+}
+/* Parent du texte Event*/
+.fc-d0 {
+    padding: 4px 8px !important;
+    border: 2px black solid;
+    border-radius: 25px;
+    background-color: #E36BB9 !important;
+}
+/*Change le fond de l'event au passage de la souris*/
+.fc-d0:hover {
+    background-color: #64DFDF !important; 
+    cursor: pointer;
+    border: 2px black solid;
+}
+.fc-Rw { /*Texte Event */
+    font-size: 1rem !important; 
+    font-weight: 700 !important;
+}
+/* =========================================================
+   PASTILLE CIRCULAIRE SUR LE NUMÉRO D'AUJOURD'HUI (V7 FIX)
+   ========================================================= */
+/* 2. Dessine la pastille de couleur autour de votre classe de numéro (.fc-monarch-1sP) */
+.mon-jour-actuel .fc-monarch-CCH {
+    background-color: #64DFDF !important; /* Couleur de la pastille turquoise */
+    color: #111111 !important;            /* Numéro écrit en noir au centre */
+    border: 2px black solid;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 35px !important; /* Diamètre du cercle */
+    height: auto;              
+    border-radius: 50% !important;         /* Arrondi parfait pour former une pastille */
+
+/*-----------------------------------------------------------------------*/
