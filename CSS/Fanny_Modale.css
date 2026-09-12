@@ -25,6 +25,8 @@
   max-width: 400px; /* Largeur maximale pour ne pas être trop grande */
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-height: 80vh;    /* Hauteur maximale : 80% de l'écran */
+  overflow-y: auto;    /* Défilement interne si le contenu est trop long */
 
 }
 
@@ -71,6 +73,12 @@ h2{
      font-family:"Instrument Sans";
      font-size: xx-large;
 }
+#modalImg {
+  max-width: 100%;     /* L'image ne dépasse jamais de la modale */
+  height: auto;        /* Conserve les proportions */
+  display: block;      /* Évite les espaces indésirables en dessous */
+  margin: 0 auto 15px; /* Centre l'image et ajoute une marge en bas */ 
+}
 #modalDate{
     font-family:"Instrument Sans";
     font-size: large;
@@ -88,5 +96,7 @@ h2{
     font-family:"Instrument Sans";
     align-self: end;
     font-size: xx-large;
+    text-decoration: none;
+    color: #111111;
 
 }
