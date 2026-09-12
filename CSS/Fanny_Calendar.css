@@ -69,6 +69,7 @@ button[class*="fc-"]:hover {
     border: 2px black solid;
     border-radius: 25px;
     background-color: #E36BB9 !important;
+    justify-content: center;
 }
 /*Change le fond de l'event au passage de la souris*/
 .fc-d0:hover {
