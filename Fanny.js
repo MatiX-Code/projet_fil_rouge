@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('eventModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalDate = document.getElementById('modalDate');
+    const modalHour = document.getElementById('modalHour');
     const modalDescription = document.getElementById('modalDescription');
     const closeBtn = document.querySelector('.close-btn');
     
@@ -62,7 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (info.event.start) {
                 modalDate.textContent = 'Date : ' + info.event.start.toLocaleDateString('fr-FR');
             }
-
+            modalHour.textContent = "A partir de 14H00";
+            
             // Récupération de la description (rangée dans extendedProps)
             modalDescription.textContent = info.event.extendedProps.description || "Fanny, trentenaire, est toujours célibataire.\nPetite, on lui contaite de belles histoires de princesses, de châteaux enchantés et de beaux chevaliers...Et si le prince charmant n'existait pas ... Si Walt Disney était un gros mytho ? Lui aurait-on menti durant toutes ces années ?\nQuestion existentielle d'une génération à cheval entre deux époques, l'une convetionnelle et l'autre anti conformiste : \" Est-il indispensable de fonder une famille pour réussir sa vie ? \".\nC'est dans la peau d'une multitutde de personnages hauts en couleur, au travers de sketches désopilants, et parfois même en chanson, que Fanny essaiera de trouver les réponses aux nombreuses questions qu'elle se pose.";
 
@@ -70,22 +72,22 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = 'flex';
         }
     });
-    // -------------------------------------------------------------
-    // AJOUT 3 : Gestion de la fermeture de la modale ❌
-    // -------------------------------------------------------------
-    
-    // 1. On écoute le clic sur TOUTE la page
-    document.addEventListener('click', function(event) {
+        // -------------------------------------------------------------
+        // AJOUT 3 : Gestion de la fermeture de la modale ❌
+        // -------------------------------------------------------------
         
-        // Clic sur la croix ❌ (on vérifie si l'élément cliqué a la classe close-btn)
-        if (event.target.classList.contains('close-btn')) {
-            modal.style.display = 'none';
-        }
+        // 1. On écoute le clic sur TOUTE la page
+        document.addEventListener('click', function(event) {
+            
+            // Clic sur la croix ❌ (on vérifie si l'élément cliqué a la classe close-btn)
+            if (event.target.classList.contains('close-btn')) {
+                modal.style.display = 'none';
+            }
 
-        // Clic sur le fond sombre en dehors de la boîte 🌓
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
+            // Clic sur le fond sombre en dehors de la boîte 🌓
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
     });
     calendar.render();
 });
