@@ -1,6 +1,6 @@
-@import "../CSS/Fanny_Media_Queries.css";
-@import "../CSS/Fanny_Calendar.css";
-@import "/projet_fil_rouge/CSS/Fanny_Modale.css";
+@import "../css/fanny_media_queries.css";
+@import "../css/fanny_calendar.css";
+@import "../css/fanny_modale.css";
 
 /*Base CSS */
 body{
