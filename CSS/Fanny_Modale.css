@@ -2,14 +2,14 @@
 
 /* 1. Le fond sombre qui recouvre toute la page */
 .modal {
-  display: none; /* Cachée par défaut 🙈 */
+  display: none; /* Cachée par défaut  */
   position: fixed; 
   z-index: 1000; /* Passe au-dessus de tout le reste */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Noir semi-transparent 🌓 */
+  background-color: rgba(0, 0, 0, 0.5); /* Noir semi-transparent */
   
   /* Permet de centrer la boîte au milieu de l'écran */
   align-items: center;
@@ -69,7 +69,7 @@
     border-radius: 50% ;
 }
 h2{
-    text-align: center;
+     text-align: center;
      font-family:"Instrument Sans";
      font-size: xx-large;
 }
