@@ -34,19 +34,16 @@
 <body> 
     <!-- Boutons Navigations -->
     <header id = "navbar">
-        <nav id ="nav-links">
+        <nav id ="nav-links" aria-label="Navigation principale">
             <a href="../HTML/Accueil.html"><button >ACCUEIL</button></a>
             <a href="../HTML/Mon_Spectacle.html"><button>MON SPECTACLE</button></a>
             <a href="../HTML/Portfolio.html"><button>PORTFOLIO</button></a>
             <a href="../HTML/Planning.html"><button style="background-color: #64DFDF;">PLANNING</button></a>
             <a href="../HTML/Contact.html"><button>CONTACT</button></a>
         </nav>
-        <nav aria-label="Fil d'Ariane" class="breadcrumb-nav">
-            <ol id="breadcrumb" class="breadcrumb-list"></ol>
-        </nav>
         
         <!-- Menu Burger Responsive -->
-        <button id = "burger">
+        <button id = "burger" aria-label="Ouvrir le menu">
             <span></span>
             <span></span>
             <span></span>
@@ -54,7 +51,7 @@
     </header>
 
     <main>
-        <container class="planning" >
+        <section class="planning" >
             <h1>Planning</h1>
             <div id = "calendrier"></div>
             <p class = " newletter">Pour ne rien louper, n'hésitez pas à vous abonnez à la <b>newsletter !</b></p>
@@ -62,7 +59,7 @@
                 <input class="newletter" type="email" name="mail" id="mail" placeholder="Votre Email">
                 <input class="envoyer" type="submit" value="S'inscrire">
             </form>
-        </container>
+        </section>
 
         <!-- Fenêtre Modale pour les événements -->
         <div id="eventModal" class="modal">

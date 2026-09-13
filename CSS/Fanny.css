@@ -92,7 +92,7 @@ main{
     margin: 0;
     padding: 0;
 }
-container.accueil{
+section.accueil{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -182,7 +182,7 @@ p{
     font-variation-settings:"wdth" 100;
     font-size: 18px ;
 }
-container.spectacle{
+section.spectacle{
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
